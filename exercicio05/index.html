@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 05</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrap">
+            <div class="box-left">
+                <h1>Contato</h1>
+                <form id="form-contact" action="">
+                    <div class="name-contact">
+                        <img src="./assets/img/user.png" alt="icone de celular">
+                        <input type="text" placeholder="Nome" id="name">
+                    </div>
+                    <div class="phone-contact">
+                        <img src="./assets/img/telephone.png" alt="icone de telefone">
+                        <input type="text" placeholder="Telefone" id="phone" onkeypress="mask(this)" size="20" maxlength="14">
+                    </div>
+
+                    <button type="submit" class="btn-save" id="btn-contact">Salvar</button>
+
+                </form>
+            </div>
+            <div class="box-right">
+                <div class="img-schedule">
+                    <img src="./assets/img/notebook.png" alt="imagem de uma agenda">
+                </div>
+                <div class="table">
+                    <div class="row">
+                        <div class="col col-left"> Nome</div>
+                        <div class="col col-right">Telefone</div>
+                    </div>
+                    <div id="new-row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
